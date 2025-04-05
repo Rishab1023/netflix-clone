@@ -16,12 +16,44 @@ header {
 }
 #langlogo{
     display: flex;
+    margin-right: 6px;
+    font-size: 14px;
 }
 .lang{
-    background-color: rgb(255, 255, 255);
+    background-color: #1e1e1e;;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
     margin: 10px;
+    padding: 6px 12px;
+    border: 2px solid white;
+    border-radius: 24px;
+}
+select{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    /* appearance: none; */
+    cursor: pointer;
+    font-weight: 600;
+}
+select:focus{
+    outline: none;
+}
+select:hover{
+    background-color: rgb(38, 39, 40);
+    color: #fffbfb;
+}
+#signin{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 10px;
+}
+#signin:hover{
+    background-color: rgb(38, 39, 40);
+    border-radius: 18px;
 }
