@@ -1,11 +1,14 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-header{
+
+header {
     display: flex;
+    justify-content: space-between;
 }
-#logo{
+
+#logo {
     height: 100px;
 }
