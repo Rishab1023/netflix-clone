@@ -8,8 +8,20 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
     height: 100px;
+}
+#langlogo{
+    display: flex;
+}
+.lang{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
 }
