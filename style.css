@@ -1,59 +1,92 @@
-body {
+*{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+body {
     background-image: linear-gradient(90deg,rgb(22, 17, 17),rgb(22, 17, 17),rgb(22, 17, 17));
 }
 
-header {
+.main{
+    background-image: url(assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+    height: 644px;
+    position: relative;
+}
+.main .box{
+    height: 644px;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
     display: flex;
-    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-around;
     align-items: center;
+    height: 50px;
+    fill: red;
 }
-
-#logo {
-    height: 100px;
+nav img{
+    color: red;
+    width: 134px;
+    position: relative;
+    z-index: 10;
 }
-#langlogo{
-    display: flex;
-    margin-right: 6px;
-    font-size: 14px;
+nav button{
+    position: relative;
+    z-index: 10;
 }
-.lang{
-    background-color: #1e1e1e;;
+.hero{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
-    margin: 10px;
-    padding: 6px 12px;
-    border: 2px solid white;
-    border-radius: 24px;
+    flex-direction: column;
+    color: white;
+    font-size: larger;
+    position: relative;
+    padding: 0 23px;
+    text-align: center;
 }
-select{
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    padding: 10px;
+.hero>:nth-child(1){
+    font-weight: 900;
+    font-size: 40px;
+}
+.hero>:nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero>:nth-child(3){
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero-buttons{
     border-radius: 18px;
-    border: none;
-    /* appearance: none; */
-    cursor: pointer;
-    font-weight: 600;
-}
-select:focus{
-    outline: none;
-}
-select:hover{
-    background-color: rgb(38, 39, 40);
-    color: #fffbfb;
-}
-#signin{
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 600;
     padding: 10px;
 }
-#signin:hover{
-    background-color: rgb(38, 39, 40);
-    border-radius: 18px;
+.separation{
+    height: 10px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20px;
+}
+.button{
+    padding: 10px;
+}
+.btnred{
+    background-color: red;
+    color: white;
+}
+.navbutton{
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 10px;
+    width: 100px;
 }
