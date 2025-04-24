@@ -53,7 +53,7 @@ select:hover{
     font-weight: 600;
     padding: 10px;
 }
-#signin:hover{
-    background-color: rgb(38, 39, 40);
-    border-radius: 18px;
+.signin:hover{
+    font-weight: 400;
+    
 }
